@@ -1,38 +1,160 @@
-.App {
+*{
+  box-sizing:border-box;
+}
+a{
+  text-decoration:none !important;
+}
+.navbar{
+  display:flex;
+  justify-content:flex-end;
+  align-content: center;
+  border-bottom: 3px solid #EAF2F8;
+}
+
+.nav-menu li{
+ list-style:none;
+ padding:15px 25px;
+ display: inline;
+ color:#3F3844;
+}
+a:visited{
+  color:#3F3844!important;
+}
+.nav-menu li:hover{
+  background-color: #3498DB;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#section1{
+  display:flex;
+  flex-wrap: wrap;
+}
+img{
+  height:350px !important;
+}
+#hero-banner{
+ object-fit: cover;
+ object-position: center center;
+ height: 350px;
+}
+.banner-content{
+  background-color: #F1C40F;
+  flex-grow:1
+}
+.banner-content h1{
+  position:relative;
+  top:30px;
+  left:44px;
+  text-align: left;
+  color:white; 
+  font-size:40px;
+  width:500px;
+}
+#section2{
+  background-color: #963596;
+  text-align:center; 
+  height:300px;
+  color:white;
+}
+#section2 h2{
+  margin-top:0;
+  padding-top:20px;
+  font-size:38px;
+}
+#section2 p{
+  padding:20px;
+  letter-spacing: 0.1em;
+}
+#ecareer{
+  text-transform: uppercase;
+  border:1px solid white;
+  border-radius:5px;
+  padding:15px;
+  font-size:17px;
+  cursor:pointer;
+}
+#ecareer:hover{
+  background-color: #3498DB;
+}
+.emp-container{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items:flex-start;
+  margin:10px;
+}
+.user-img{
+  position: relative;
+    left: 161px;
+    top: -12px;
+ width:40px;
+ height:40px !important;
+ border-radius: 50%;
+}
+.emp-block{
+padding:8px;
+border:2px solid black;
+border-radius:5px;
+margin:6px;
+}
+table{
+  width:300px;
+}
+tr>td:first-child{
+  font-weight:bold;
+  width:135px;
+}
+tr>td+td{
+   width:145px;
+}
+.Filter-container{
+  background-color: bisque;
+  display:flex;
+  justify-content: space-between;
+}
+#search{
+  padding:4px 8px;
+  font-size:16px;
+}
+.sort-bar{
+  display:flex;
+  align-items:center;
+}
+input[type="text"]{
+  padding:4px 8px;
+  font-size:16px;
+  margin:15px 5px;
+  width: 500px;
+}
+.bar-view{
+  flex-flow:column;
+}
+.inpBtnGrp{
+  font-size:16px;
+  margin: 0px 2px;
+}
+.fallback-ui{
+ position:relative;
+ top:50px;
+ text-align:center;
+}
+ .contactblock{
+   height:50vh;
+    padding:15px;
+    background-color:cornflowerblue
+ }
+ .careers{
+  display:flex;
+  justify-content: space-evenly;
+ }
+ .career-card{
+  margin:10px;
+  padding:10px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  flex-basis:300px;
+  border:2px solid cornflowerblue;
+ }
+ .centered{
+   text-align:center;
+ }
